@@ -1,10 +1,20 @@
 # implement List.indexOf
 
-2.	y = log2(x)
-	means
-	2^y = x
-
-	The graph looks like 2^x, but reflected across y=x.
+2.	count = log2(n)
+	means that
+	2^count = n
+	
+	the graph looks like
+	2^n reflected about y=n
+	except that we only care
+	about positive integer n values
+	since n represents size
+	when n is 0, count should be 0
+	we also take the ceiling of the count value
+	for values of n where the log2(n)
+	doesn't return an integer value
+	(ie list size 7 --> count = 3)
+	
 
 3.	Given a list and a element
 	Return any index of that element in the list
